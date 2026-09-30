@@ -1,0 +1,21 @@
+services:
+  server1:
+    build: .
+    ports:
+      - "3001:3000"
+    environment:
+      - SERVER_NAME=SERVER_NAME_ONE
+
+  server2:
+    build: .
+    ports:
+      - "3002:3000"
+    environment:
+      - SERVER_NAME=SERVER_NAME_TWO
+
+  server3:
+    build: .
+    ports:
+      - "3003:3000"
+    environment:
+      - SERVER_NAME=SERVER_NAME_THREE
